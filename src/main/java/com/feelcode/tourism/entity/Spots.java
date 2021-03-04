@@ -1,0 +1,38 @@
+package com.feelcode.tourism.entity;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import java.io.Serializable;
+
+@Entity
+@Table(name = "tourism_spots")
+@Data
+public class Spots extends BaseEntity{
+    @Column(name = "spots_name", length = 100)
+    private String spotsName;
+
+    @Column(name = "spots_address", length = 100)
+    private String spotsAddress;
+
+    @Column(name = "spots_phone")
+    private String spotsPhone;
+
+    @Column(name = "spots_price")
+    private String spotsPrice;
+
+    @Column(name = "spots_open_time")
+    private String spotsOpenTime;
+
+    @Column(name= "spots_star")
+    private String spotsStar;
+
+    @Column(name = "spots_description")
+    private String spotsDescription;
+
+    @Column(columnDefinition="text", name = "spots_images")
+    private String spotsImages;
+}

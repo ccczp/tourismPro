@@ -1,0 +1,656 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hi.嗨旅-首页</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <!--STYLESHEET-->
+        <!--=================================================-->
+        <!--Roboto Slab Font [ OPTIONAL ] -->
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,700italic,300,700,500italic,400" rel="stylesheet">
+        <!--Bootstrap Stylesheet [ REQUIRED ]-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!--Jasmine Stylesheet [ REQUIRED ]-->
+        <link href="css/style.css" rel="stylesheet">
+        <!--Font Awesome [ OPTIONAL ]-->
+        <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!--Switchery [ OPTIONAL ]-->
+        <link href="plugins/switchery/switchery.min.css" rel="stylesheet">
+        <!--Bootstrap Select [ OPTIONAL ]-->
+        <link href="plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+        <!--ricksaw.js [ OPTIONAL ]-->
+        <link href="plugins/jquery-ricksaw-chart/css/rickshaw.css" rel="stylesheet">
+        <!--Bootstrap Validator [ OPTIONAL ]-->
+        <link href="plugins/bootstrap-validator/bootstrapValidator.min.css" rel="stylesheet">
+        <!--Demo [ DEMONSTRATION ]-->
+        <link href="css/demo/jquery-steps.min.css" rel="stylesheet">
+        <!--Summernote [ OPTIONAL ]-->
+        <link href="plugins/summernote/summernote.min.css" rel="stylesheet">
+        <!--Demo [ DEMONSTRATION ]-->
+        <link href="css/demo/jasmine.css" rel="stylesheet">
+        <!--SCRIPT-->
+        <!--=================================================-->
+        <!--Page Load Progress Bar [ OPTIONAL ]-->
+        <link href="plugins/pace/pace.min.css" rel="stylesheet">
+        <script src="plugins/pace/pace.min.js"></script>
+        <script type="text/javascript" src="js/include.js"></script>
+    </head>
+    <!--TIPS-->
+    <!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
+    <body>
+        <div id="container" class="effect mainnav-lg navbar-fixed mainnav-fixed">
+            <!--NAVBAR-->
+            <!--===================================================-->
+            <header id="navbar">
+                <div id="navbar-container" class="boxed">
+                    <!--Navbar Dropdown-->
+                    <!--================================-->
+                    <div class="navbar-content clearfix">
+                        <ul class="nav navbar-top-links pull-left">
+                            <!--Navigation toogle button-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <li class="tgl-menu-btn">
+                                <a class="mainnav-toggle" href="#"> 
+                                    <i class="fa fa-navicon fa-lg"></i> 
+                                </a>
+                            </li>
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        </ul>
+                        <ul class="nav navbar-top-links pull-right">
+                            <!--Profile toogle button-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <li id="dropdown-user" class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+                                    <span class="pull-right"> <img class="img-circle img-user media-object" src="img/av1.png" alt="Profile Picture"> </span>
+                                    <div class="username hidden-xs">朱利尔</div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right with-arrow">
+                                    <!-- User dropdown menu -->
+                                    <ul class="head-list">
+                                        <li>
+                                            <a href="#"> <i class="fa fa-user fa-fw"></i> 头像 </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">  <i class="fa fa-envelope fa-fw"></i> 消息 </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">  <i class="fa fa-gear fa-fw"></i> 配置 </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> <i class="fa fa-sign-out fa-fw"></i> 注销 </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <!--End user dropdown-->
+                        </ul>
+                    </div>
+                    <!--================================-->
+                    <!--End Navbar Dropdown-->
+                </div>
+            </header>
+            <!--===================================================-->
+            <!--END NAVBAR-->
+            <div class="boxed">
+                <!--CONTENT CONTAINER-->
+                <!--===================================================-->
+                <div id="content-container">
+                <div class="pageheader hidden-xs">
+                  <h1><i class="fa fa-home"></i> 首页 </h1>
+                    <div class="breadcrumb-wrapper">
+                      <span class="label">当前位置：</span>
+                         <ol class="breadcrumb">
+                            <li> <a href="#"> Home </a> </li>
+                            <li class="active"> 首页 </li>
+                         </ol>
+                    </div>
+                </div>
+                    <!--Page content-->
+                    <!--===================================================-->
+                    <div id="page-content">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">欢迎您</h3>
+                                    </div>
+                                    <div class="panel-body" style="text-align: center;">
+                                        <!--Tooltip Example-->
+                                        <p class="muted" style="font-size: 2.3em;color: #337ab7;">欢迎来到旅游网站后台管理系统</p>
+                                        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 eq-box-md grid">
+                                <div class="panel">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-9 col-sm-9 col-xs-10">
+                                                <h1 class="mar-no"> <span class="counter" id="todayOrder">50</span></h1>
+                                                <p class="mar-ver-5">今日订单数</p>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-2" style="text-align: right;"> <i class="fa fa-calendar fa-5x text-primary"></i> </div>
+                                        </div>
+                                        <p id="todayOrder-detail">  </p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-md-4 eq-box-md grid">
+                                <div class="panel">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-9 col-sm-9 col-xs-10">
+                                                <h1 class="mar-no"> <span class="counter" id="totalOrder">100</span></h1>
+                                                <p class="mar-ver-5">订单总数</p>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-2" style="text-align: right;"> <i class="fa fa-shopping-cart fa-5x text-primary"></i> </div>
+                                        </div>
+                                        <p id="totalOrder-detail"> 4% higher than last month </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 eq-box-md grid">
+                                <div class="panel">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-9 col-sm-9 col-xs-10">
+                                                <h1 class="mar-no"> <span class="counter"id="totalProduct">50</span></h1>
+                                                <p class="mar-ver-5">记录总数</p>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-2" style="text-align: right;"> <i class="fa fa-server fa-5x text-primary"></i> </div>
+                                        </div>
+                                        <p id="totalProduct-detail"> 4% higher than last month </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="panel">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-9 col-sm-9 col-xs-10">
+                                                <div id="carousel-example-vertical" class="carousel vertical slide" data-ride="carousel">
+                                                    <div class="carousel-inner" role="listbox" id="three-comment">
+                                                    
+                                                    </div>
+                                                    <!-- Controls -->
+                                                    <a class="up carousel-control" href="#carousel-example-vertical" role="button" data-slide="prev">
+                                                    <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="down carousel-control" href="#carousel-example-vertical" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="panel">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <ul class="nav nav-section nav-justified">
+                                                <li>
+                                                    <div class="section">
+                                                        <!-- <h1 class="mar-no"> <span class="counter" id="totalComment">50</span></h1> -->
+                                                        <p class="text-left" id="totalComment" style="font-size: 2em;"> 200 </p>
+                                                        <hr style="margin-bottom:0px;">
+                                                        <h4 class="text-left"> 总留言条数 
+                                                            <!-- <i class="fa fa-caret-up text-success"></i> -->
+                                                        </h4>
+                                                        <!-- <div class="progress progress-striped progress-xs">
+                                                            <div style="width: 60%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar"> <span class="sr-only">60% Complete</span> </div>
+                                                        </div> -->
+                                                        <!-- <p class="text-left">Health: <span class="text-success">Good</span></p> -->
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="section">
+                                                        <p class="text-left" id="totalUser" style="font-size: 2em;"> 300 </p>
+                                                        <hr style="margin-bottom:0px;">
+                                                        <h4 class="text-left"> 总用户量 
+                                                            <!-- <i class="fa fa-caret-down text-danger"></i> -->
+                                                        </h4>
+                                                        <!-- <div class="progress progress-striped progress-xs">
+                                                            <div style="width: 60%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar"> <span class="sr-only">60% Complete</span> </div>
+                                                        </div> -->
+                                                        <!-- <p class="text-left">Health: <span class="text-danger">Bad</span></p> -->
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="section">
+                                                        <p class="text-left" id="" style="font-size: 2em;"> 120 </p>
+                                                        <hr style="margin-bottom:0px;">
+                                                        <h4 class="text-left"> 访问量 
+                                                            <!-- <i class="fa fa-caret-up text-success"></i> -->
+                                                        </h4>
+                                                        <!-- <div class="progress progress-striped progress-xs">
+                                                            <div style="width: 60%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar"> <span class="sr-only">60% Complete</span> </div>
+                                                        </div> -->
+                                                        <!-- <p class="text-left">Health: <span class="text-success">Good</span></p> -->
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"> 订单总量统计-饼图 </h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <!--Flot Spline Chart placeholder -->
+                                        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                                        <div id="container1"></div>
+                                        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col-md-6">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"> 每日订单量统计-折线图 </h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <!--Flot Spline Chart placeholder -->
+                                        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                                        <div id="container2"></div>
+                                        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    <!--===================================================-->
+                    <!--End page content-->
+                </div>
+                <!--===================================================-->
+                <!--END CONTENT CONTAINER-->
+                <!--MAIN NAVIGATION-->
+                <!--===================================================-->
+
+                <include src="menu.html"></include>
+
+                <!--===================================================-->
+                <!--END MAIN NAVIGATION-->
+            </div>
+            <!-- FOOTER -->
+            <!--===================================================-->
+            <footer id="footer">
+                <!-- Visible when footer positions are fixed -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <div class="show-fixed pull-right">
+                    <ul class="footer-list list-inline">
+                        <li>
+                            <p class="text-sm">SEO Proggres</p>
+                            <div class="progress progress-sm progress-light-base">
+                                <div style="width: 80%" class="progress-bar progress-bar-danger"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="text-sm">Online Tutorial</p>
+                            <div class="progress progress-sm progress-light-base">
+                                <div style="width: 80%" class="progress-bar progress-bar-primary"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn btn-sm btn-dark btn-active-success">Checkout</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Visible when footer positions are static -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <div class="hide-fixed pull-right pad-rgt">By 朱利尔 v1.0</div>
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <!-- Remove the class name "show-fixed" and "hide-fixed" to make the content always appears. -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <p class="pad-lft">Copyright &copy; 2020.Company 朱利尔 All rights reserved.<a target="_blank" href="http://www.baidu.com"></a></p>
+            </footer>
+            <!--===================================================-->
+            <!-- END FOOTER -->
+            <!-- SCROLL TOP BUTTON -->
+            <!--===================================================-->
+            <button id="scroll-top" class="btn"><i class="fa fa-chevron-up"></i></button>
+            <!--===================================================-->
+        </div>
+        <!--===================================================-->
+        <!-- END OF CONTAINER -->
+        <!--JAVASCRIPT-->
+        <!--=================================================-->
+        <!--jQuery [ REQUIRED ]-->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <!--BootstrapJS [ RECOMMENDED ]-->
+        <script src="js/bootstrap.min.js"></script>
+        <!--Fast Click [ OPTIONAL ]-->
+        <script src="plugins/fast-click/fastclick.min.js"></script>
+        <!--Jquery Nano Scroller js [ REQUIRED ]-->
+        <script src="plugins/nanoscrollerjs/jquery.nanoscroller.min.js"></script>
+        <!--Metismenu js [ REQUIRED ]-->
+        <script src="plugins/metismenu/metismenu.min.js"></script>
+        <!--Jasmine Admin [ RECOMMENDED ]-->
+        <script src="js/scripts.js"></script>
+        <!--Switchery [ OPTIONAL ]-->
+        <script src="plugins/switchery/switchery.min.js"></script>
+        <!--Jquery Steps [ OPTIONAL ]-->
+        <script src="plugins/parsley/parsley.min.js"></script>
+        <!--Jquery Steps [ OPTIONAL ]-->
+        <script src="plugins/jquery-steps/jquery-steps.min.js"></script>
+        <!--Bootstrap Select [ OPTIONAL ]-->
+        <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+        <!--Bootstrap Wizard [ OPTIONAL ]-->
+        <script src="plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+        <!--Masked Input [ OPTIONAL ]-->
+        <script src="plugins/masked-input/bootstrap-inputmask.min.js"></script>
+        <!--Bootstrap Validator [ OPTIONAL ]-->
+        <script src="plugins/bootstrap-validator/bootstrapValidator.min.js"></script>
+        <!--Flot Chart [ OPTIONAL ]-->
+        <script src="plugins/moment/moment.min.js"></script>
+        <script src="plugins/moment-range/moment-range.js"></script>
+        <!--Flot Order Bars Chart [ OPTIONAL ]-->
+        <!--ricksaw.js [ OPTIONAL ]-->
+       <!--Summernote [ OPTIONAL ]-->
+        <script src="plugins/summernote/summernote.min.js"></script>
+        <!--Fullscreen jQuery [ OPTIONAL ]-->
+        <script src="plugins/screenfull/screenfull.js"></script>
+        <!--Form Wizard [ SAMPLE ]-->
+        <script src="js/demo/wizard.js"></script>
+        <!--Form Wizard [ SAMPLE ]-->
+        <script src="js/demo/form-wizard.js"></script>
+        <script src="js/demo/dashboard-v2.js"></script>
+        <script src="js/highcharts/highcharts.js"></script>
+        <script src="js/highcharts/exporting.js"></script>
+        <script src="js/highcharts/highcharts-zh_CN.js"></script>
+        <script src="js/global.js"></script>
+        <script>
+            var objArrDateOrder = [];
+            var objArrHotelDateOrder = [];
+            var objArrPlaneDateOrder = [];
+            var orderPercent = [];
+            var obj = new Object();
+            $.ajax({
+                type:'post',
+                async:false,
+                url:base_url+'/index/indexData',
+                contentType:'application/json;chart=utf-8',
+                dataType:'json',
+                data:JSON.stringify(obj),
+                success:function(result){
+                   $("#todayOrder").text(result.data.todayOrder);
+                   $("#todayOrder-detail").text("截至 " + getMyDate(new Date));
+                   $("#totalOrder").text(result.data.totalOrder);
+                   var orderDetail = "审核中：" + result.data.totalSubmitOrder + " 笔，已通过：" + result.data.totalPassOrder + " 笔，已拒绝：" + result.data.totalRefuseOrder + " 笔。"
+                   $("#totalOrder-detail").text(orderDetail);
+                   var totalProduct = result.data.totalSpots + result.data.totalHotel + result.data.totalLine + result.data.totalGroup + result.data.totalPlane;
+                   $("#totalProduct").text(totalProduct);
+                   var productDetail = "景点：" + result.data.totalSpots + " 条，酒店：" + result.data.totalHotel + " 条，旅线：" + result.data.totalLine + " 条，旅团："+ result.data.totalGroup + " 条，航班："+ result.data.totalPlane + " 条。"
+                   $("#totalProduct-detail").text(productDetail);
+                   $("#totalComment").text(result.data.totalComment);
+                   $("#totalUser").text(result.data.totalUser);
+                    
+                   //set charts dateOrder
+                   if(typeof(result.data.dateOrder)!="undefined" && result.data.dateOrder.length>0){
+                        for (var i = 0; i < result.data.dateOrder.length; i++) {
+                            var obj = [];
+                            obj[0] = new Date(result.data.dateOrder[i].dealDate).getTime();
+                            obj[1] = result.data.dateOrder[i].dealNum;
+                            objArrDateOrder.push(obj);
+                        }
+                   }
+                   console.log(objArrDateOrder);
+                    //set charts hotelDateOrder
+                    if(typeof(result.data.hotelDateOrder)!="undefined" && result.data.hotelDateOrder.length>0){
+                        for (var j = 0; j < result.data.hotelDateOrder.length; j++) {
+                            var obj = [];
+                            obj[0] = new Date(result.data.hotelDateOrder[j].dealDate).getTime();
+                            obj[1] = result.data.hotelDateOrder[j].dealNum;
+                            objArrHotelDateOrder.push(obj);
+                        }
+                    }
+                    console.log(objArrHotelDateOrder);
+                    //set charts planeDateOrder
+                    if(typeof(result.data.planeDateOrder)!="undefined" && result.data.planeDateOrder.length>0){
+                        for (var k = 0; k < result.data.planeDateOrder.length; k++) {
+                            var obj = [];
+                            obj[0] = new Date(result.data.planeDateOrder[k].dealDate).getTime();
+                            obj[1] = result.data.planeDateOrder[k].dealNum;
+                            objArrPlaneDateOrder.push(obj);
+                        }
+                    }
+                    console.log(objArrPlaneDateOrder);
+
+                    //set charts orderPercent
+                    for (var m = 0; m < 4; m++) {
+                            var obj = [];
+                            if(m===0){
+                                obj[0]="酒店";
+                                obj[1] = result.data.hotelPercent;
+                            }else if(m===1){
+                                obj[0]="机票";
+                                obj[1] = result.data.planePercent;
+                            }else if(m===2){
+                                obj[0]="旅线";
+                                obj[1] = result.data.linePercent;
+                            }else{
+                                obj[0]="其他";
+                                obj[1] = result.data.otherPercent;
+                            }
+                            orderPercent.push(obj);
+                    }
+                    console.log(orderPercent);
+
+                    //set three comment
+                    var htmlContent = "";
+                    var commentList = result.data.commentList;
+                    commentList.forEach(function(val,index,data){
+                        var active = "";
+                    	if(index==0){
+                    		active="active";
+                    	}
+                    	htmlContent = htmlContent + 
+                        "<div class='item "+ active +"'>"+
+                            "<div class='ticker-headline'>"+
+                                "<div class='media'>"+
+                                    "<span class='pull-left'><i class='fa fa-envelope fa-5x text-primary' style='font-size:6em;'></i></span>"+
+                                    "<div class='media-body'>"+
+                                        "<div class='h4'><strong>来自用户："+ val.userName +"  的留言</strong></div>"+
+                                        "<p>"+ val.commentContent +"</p>"+
+                                        "<small>评论时间："+ val.commentTime +"</small>"+
+                                    "</div>"+
+                                "</div>"+
+                            "</div>"+
+                        "</div>";
+                        $("#three-comment").html(htmlContent);
+                    });
+                }
+            })
+
+            //将时间戳格式化 
+            function getMyDate(time){  
+                if(typeof(time)=="undefined"){
+                    return "";
+                }
+                var oDate = new Date(time),  
+                oYear = oDate.getFullYear(),  
+                oMonth = oDate.getMonth()+1,  
+                oDay = oDate.getDate(),  
+                oHour = oDate.getHours(),  
+                oMin = oDate.getMinutes(),  
+                oSen = oDate.getSeconds(),  
+                oTime = oYear +'-'+ getzf(oMonth) +'-'+ getzf(oDay) +' '+ getzf(oHour) +':'+ getzf(oMin) +':'+getzf(oSen);//最后拼接时间  
+                        
+                return oTime;  
+            };
+                
+            //补0操作,当时间数据小于10的时候，给该数据前面加一个0  
+            function getzf(num){  
+                if(parseInt(num) < 10){  
+                    num = '0'+num;  
+                }  
+                return num;  
+            }
+
+
+            $('#container1').highcharts({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false
+                },
+                title: {
+                    text: '订单总量统计-饼图'
+                },
+                tooltip: {
+                    headerFormat: '{series.name}<br>',
+                    pointFormat: '{point.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true,
+                            format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                            style: {
+                                color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                            }
+                        }
+                    }
+                },
+                series: [{
+                    type: 'pie',
+                    name: '订单量',
+                    // data: [
+                    //     ['Firefox',   45.0],
+                    //     ['IE',       26.8],
+                    //     {
+                    //         name: 'Chrome',
+                    //         y: 12.8,
+                    //         sliced: true,
+                    //         selected: true
+                    //     },
+                    //     ['Safari',    8.5],
+                    //     ['Opera',     6.2],
+                    //     ['其他',   0.7]
+                    // ]
+                    data: orderPercent
+                }],
+                credits: {
+                    enabled: false     //不显示LOGO
+                }
+            });
+
+            $('#container2').highcharts({
+                title: {
+                    text: '每日订单量统计-折线图'
+                },
+                subtitle: {
+                    //text: '数据来源：thesolarfoundation.com'
+                },
+                tooltip: {
+                    dateTimeLabelFormats: {
+                        millisecond: '%H:%M:%S.%L',
+                        second: '%H:%M:%S',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                        day: '%Y-%m-%d',
+                        week: '%m-%d',
+                        month: '%Y-%m',
+                        year: '%Y'
+                    }
+                },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        millisecond: '%H:%M:%S.%L',
+                        second: '%H:%M:%S',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                        day: '%m-%d',
+                        week: '%m-%d',
+                        month: '%Y-%m',
+                        year: '%Y'
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: '订单量'
+                    }
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle'
+                },
+                plotOptions: {
+                    // series: {
+                    //     cursor: 'pointer',
+                    //     point: {
+                    //         events: {
+                    //             // 数据点点击事件
+                    //             // 其中 e 变量为事件对象，this 为当前数据点对象
+                    //             click: function (e) {
+                    //                 $('.message').html( Highcharts.dateFormat('%Y-%m-%d', this.x) + ':<br/>  访问量：' +this.y );
+                    //             }
+                    //         }
+                    //     },
+                    //     marker: {
+                    //         lineWidth: 1
+                    //     }
+                    // }
+                    series: {
+                        label: {
+                            connectorAllowed: false
+                        },
+                        //pointStart: 2010
+                    }
+                },
+                series: [
+                    {
+                        //type: 'area',
+                        name: '全部订单',
+                        data: (objArrDateOrder)
+                    },{
+                        //type: 'area',
+                        name: '酒店',
+                        data: (objArrHotelDateOrder)
+                    },{
+                        //type: 'area',
+                        name: '机票',
+                        data: (objArrPlaneDateOrder)
+                    }
+                ],
+                responsive: {
+                    rules: [{
+                        condition: {
+                            maxWidth: 500
+                        },
+                        chartOptions: {
+                            legend: {
+                                layout: 'horizontal',
+                                align: 'center',
+                                verticalAlign: 'bottom'
+                            }
+                        }
+                    }]
+                },
+                credits: {
+                    enabled: false     //不显示LOGO
+                }
+            });
+        </script>
+      
+    </body>
+</html>
